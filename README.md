@@ -29,3 +29,6 @@ Custom CNN with 3 convolutional blocks (Conv2d → BatchNorm → ReLU → MaxPoo
 
 ## Tech Stack
 Python, PyTorch, torchvision, scikit-learn, matplotlib
+
+## Notebook
+View Notebook on nbviewer
