@@ -31,4 +31,4 @@ Custom CNN with 3 convolutional blocks (Conv2d → BatchNorm → ReLU → MaxPoo
 Python, PyTorch, torchvision, scikit-learn, matplotlib
 
 ## Notebook
-View Notebook on nbviewer
+[View Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia.ipynb) 
