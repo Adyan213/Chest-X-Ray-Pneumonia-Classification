@@ -17,10 +17,10 @@ Custom CNN with 3 convolutional blocks (Conv2d → BatchNorm → ReLU → MaxPoo
 | Metric | Score |
 |---|---|
 | Test Accuracy | 83% |
-| Normal Recall | 62% |
-| Pneumonia Recall | 96% |
+| Normal Recall | 60% |
+| Pneumonia Recall | 98% |
 | Macro F1 | 0.81 |
-| AUC-ROC | 0.927 |
+| AUC-ROC | 0.9431 |
 
 ## Coming Soon
 - Transfer learning with DenseNet121
@@ -31,4 +31,4 @@ Custom CNN with 3 convolutional blocks (Conv2d → BatchNorm → ReLU → MaxPoo
 Python, PyTorch, torchvision, scikit-learn, matplotlib
 
 ## Notebook
-[View Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia.ipynb) 
+[View Baseline Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia-baseline.ipynb) 
