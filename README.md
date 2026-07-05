@@ -2,33 +2,33 @@
 
 A deep learning pipeline for binary classification of chest X-rays into Normal and Pneumonia categories, built with PyTorch.
 
+## Notebook
+[View Baseline Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia.ipynb)
+
+[View DenseNet121 Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia-densenet121.ipynb)
+
 ## Dataset
 [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) by Paul Mooney — 5,800+ chest X-ray images from Guangzhou Women and Children's Medical Center.
 
 ## Pipeline
-- Custom data loader with train/val/test split (fixed imbalanced val set from 16 → 400+ images)
+- Custom data loader with train/val/test split (fixed imbalanced val set from 16 to 400+ images)
 - Data augmentation: random horizontal flip, random rotation
 - Class imbalance handling via weighted loss function (1:3 Normal:Pneumonia ratio)
-
-## Model
-Custom CNN with 3 convolutional blocks (Conv2d → BatchNorm → ReLU → MaxPool) followed by 2 fully connected layers.
+- Transfer learning with DenseNet121 pretrained on ImageNet
 
 ## Results
-| Metric | Score |
-|---|---|
-| Test Accuracy | 83% |
-| Normal Recall | 60% |
-| Pneumonia Recall | 98% |
-| Macro F1 | 0.81 |
-| AUC-ROC | 0.9431 |
+
+| Metric | Baseline CNN | DenseNet121 |
+|---|---|---|
+| Test Accuracy | 83% | 88% |
+| Normal Recall | 60% | 80% |
+| Pneumonia Recall | 98% | 92% |
+| Macro F1 | 0.81 | 0.86 |
+| AUC-ROC | 0.9431 | 0.9403 |
 
 ## Coming Soon
-- Transfer learning with DenseNet121
 - Grad-CAM visualizations
-- Comparison of baseline CNN vs pretrained model
+- Fine-tuning pretrained layers
 
 ## Tech Stack
 Python, PyTorch, torchvision, scikit-learn, matplotlib
-
-## Notebook
-[View Baseline Notebook on nbviewer](https://nbviewer.org/github/Adyan213/Chest-X-Ray-Pneumonia-Classification/blob/main/chest-x-ray-pneumonia-baseline.ipynb) 
