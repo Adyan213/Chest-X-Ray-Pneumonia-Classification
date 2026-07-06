@@ -36,6 +36,7 @@ Grad-CAM heatmaps show which regions the model focuses on when making prediction
 <img width="2101" height="1771" alt="gradcam_visualization (1)" src="https://github.com/user-attachments/assets/5cc064a5-34d9-44aa-85b2-d859df55753c" />
 
 The model correctly focuses on lower and middle lung fields for Pneumonia cases, consistent with where consolidations appear clinically. Misclassifications occur when the model incorrectly interprets normal anatomical structures as consolidations.
+For Normal cases, activations are more diffuse as the model finds no specific consolidation region. For Pneumonia cases, activations concentrate on the affected lung fields, consistent with clinical presentation
 
 ## Tech Stack
 Python, PyTorch, torchvision, scikit-learn, matplotlib
