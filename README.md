@@ -20,11 +20,11 @@ A deep learning pipeline for binary classification of chest X-rays into Normal a
 
 | Metric | Baseline CNN | DenseNet121 |
 |---|---|---|
-| Test Accuracy | 83% | 88% |
-| Normal Recall | 60% | 80% |
-| Pneumonia Recall | 98% | 92% |
+| Test Accuracy | 83% | 87% |
+| Normal Recall | 60% | 82% |
+| Pneumonia Recall | 98% | 90% |
 | Macro F1 | 0.81 | 0.86 |
-| AUC-ROC | 0.9431 | 0.9403 |
+| AUC-ROC | 0.9431 | 0.9384 |
 
 ## Coming Soon
 - Grad-CAM visualizations
