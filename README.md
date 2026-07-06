@@ -32,7 +32,9 @@ A deep learning pipeline for binary classification of chest X-rays into Normal a
 ## Grad-CAM Visualizations
 
 Grad-CAM heatmaps show which regions the model focuses on when making predictions. Red regions indicate high attention, blue indicates low attention.
-<img width="2101" height="1771" alt="gradcam_visualization" src="https://github.com/user-attachments/assets/7e0f9148-d23f-4c57-a71f-920346c6b7b1" />
+
+<img width="2101" height="1771" alt="gradcam_visualization (1)" src="https://github.com/user-attachments/assets/5cc064a5-34d9-44aa-85b2-d859df55753c" />
+
 The model correctly focuses on lower and middle lung fields for Pneumonia cases, consistent with where consolidations appear clinically. Misclassifications occur when the model incorrectly interprets normal anatomical structures as consolidations.
 
 ## Tech Stack
